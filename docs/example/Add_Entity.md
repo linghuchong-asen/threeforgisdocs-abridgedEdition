@@ -12,7 +12,9 @@ entities.add({
     outLineColor: Webgis.Color.AQUA,
     outLineWidth: 400,
     stRotation: Webgis.Math.toRadians(0), // 旋转角度
+    ......
   },
 });
 ```
 
+![矩形](D:\riceSand\three.js封装--webgis场景-文档\three.jsforgisAPIdocs\docs\example\img\rectangle.png)

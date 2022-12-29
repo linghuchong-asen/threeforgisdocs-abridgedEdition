@@ -1,13 +1,13 @@
 import { defineClientConfig } from "@vuepress/client";
 import { h } from "vue";
 
-import { useStyleTag } from "D:/聚米画沙/web/project/three.js封装--用于webgis场景/three.js封装--聚米画沙--文档/threedocs-hope-用户版/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.146_vuepress@2.0.0-beta.60/node_modules/vuepress-plugin-components/lib/client/vueuse.js";
-import Badge from "D:/聚米画沙/web/project/three.js封装--用于webgis场景/three.js封装--聚米画沙--文档/threedocs-hope-用户版/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.146_vuepress@2.0.0-beta.60/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
-import FontIcon from "D:/聚米画沙/web/project/three.js封装--用于webgis场景/three.js封装--聚米画沙--文档/threedocs-hope-用户版/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.146_vuepress@2.0.0-beta.60/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
-import BackToTop from "D:/聚米画沙/web/project/three.js封装--用于webgis场景/three.js封装--聚米画沙--文档/threedocs-hope-用户版/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.146_vuepress@2.0.0-beta.60/node_modules/vuepress-plugin-components/lib/client/components/BackToTop.js";
+import { useStyleTag } from "D:/riceSand/three.js封装--webgis场景-文档/threeforgisdocs-用户版/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.146_vuepress@2.0.0-beta.60/node_modules/vuepress-plugin-components/lib/client/vueuse.js";
+import Badge from "D:/riceSand/three.js封装--webgis场景-文档/threeforgisdocs-用户版/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.146_vuepress@2.0.0-beta.60/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
+import FontIcon from "D:/riceSand/three.js封装--webgis场景-文档/threeforgisdocs-用户版/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.146_vuepress@2.0.0-beta.60/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
+import BackToTop from "D:/riceSand/three.js封装--webgis场景-文档/threeforgisdocs-用户版/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.146_vuepress@2.0.0-beta.60/node_modules/vuepress-plugin-components/lib/client/components/BackToTop.js";
 
 
-import "D:/聚米画沙/web/project/three.js封装--用于webgis场景/three.js封装--聚米画沙--文档/threedocs-hope-用户版/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.146_vuepress@2.0.0-beta.60/node_modules/vuepress-plugin-components/lib/client/styles/sr-only.scss";
+import "D:/riceSand/three.js封装--webgis场景-文档/threeforgisdocs-用户版/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.146_vuepress@2.0.0-beta.60/node_modules/vuepress-plugin-components/lib/client/styles/sr-only.scss";
 
 export default defineClientConfig({
   enhance: ({ app }) => {

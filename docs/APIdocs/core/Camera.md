@@ -6,10 +6,21 @@
 
 **Camera(scene: Scene)**
 
+| Name    | Type                                                         | Description         |
+| :------ | :----------------------------------------------------------- | :------------------ |
+| `scene` | [Scene](https://www.vvpstk.com/public/Cesium/Documentation/Scene.html) | 场景（Scene对象）。 |
+
 ## 示例代码
 
 ```js
-const camera = new WebGis.Camera(scene)
+// 创建一个位置在原点，看向z轴负方向，视角60度，长宽比1:1的相机。
+var camera = new Cesium.Camera(scene);
+camera.position = new Cesium.Cartesian3();
+camera.direction = Cesium.Cartesian3.negate(Cesium.Cartesian3.UNIT_Z, new Cesium.Cartesian3());
+camera.up = Cesium.Cartesian3.clone(Cesium.Cartesian3.UNIT_Y);
+camera.frustum.fov = Cesium.Math.PI_OVER_THREE;
+camera.frustum.near = 1.0;
+camera.frustum.far = 2.0;
 ```
 
 ## 属性

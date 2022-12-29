@@ -2,9 +2,32 @@
 <p>由位置、方向和视锥体定义的相机。</p>
 <h2 id="构造器" tabindex="-1"><a class="header-anchor" href="#构造器" aria-hidden="true">#</a> 构造器</h2>
 <p><strong>Camera(scene: Scene)</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code v-pre>scene</code></td>
+<td style="text-align:left"><a href="https://www.vvpstk.com/public/Cesium/Documentation/Scene.html" target="_blank" rel="noopener noreferrer">Scene<ExternalLinkIcon/></a></td>
+<td style="text-align:left">场景（Scene对象）。</td>
+</tr>
+</tbody>
+</table>
 <h2 id="示例代码" tabindex="-1"><a class="header-anchor" href="#示例代码" aria-hidden="true">#</a> 示例代码</h2>
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> camera <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">WebGis<span class="token punctuation">.</span>Camera</span><span class="token punctuation">(</span>scene<span class="token punctuation">)</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="属性" tabindex="-1"><a class="header-anchor" href="#属性" aria-hidden="true">#</a> 属性</h2>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token comment">// 创建一个位置在原点，看向z轴负方向，视角60度，长宽比1:1的相机。</span>
+<span class="token keyword">var</span> camera <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cesium<span class="token punctuation">.</span>Camera</span><span class="token punctuation">(</span>scene<span class="token punctuation">)</span><span class="token punctuation">;</span>
+camera<span class="token punctuation">.</span>position <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cesium<span class="token punctuation">.</span>Cartesian3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+camera<span class="token punctuation">.</span>direction <span class="token operator">=</span> Cesium<span class="token punctuation">.</span>Cartesian3<span class="token punctuation">.</span><span class="token function">negate</span><span class="token punctuation">(</span>Cesium<span class="token punctuation">.</span>Cartesian3<span class="token punctuation">.</span><span class="token constant">UNIT_Z</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Cesium<span class="token punctuation">.</span>Cartesian3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+camera<span class="token punctuation">.</span>up <span class="token operator">=</span> Cesium<span class="token punctuation">.</span>Cartesian3<span class="token punctuation">.</span><span class="token function">clone</span><span class="token punctuation">(</span>Cesium<span class="token punctuation">.</span>Cartesian3<span class="token punctuation">.</span><span class="token constant">UNIT_Y</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+camera<span class="token punctuation">.</span>frustum<span class="token punctuation">.</span>fov <span class="token operator">=</span> Cesium<span class="token punctuation">.</span>Math<span class="token punctuation">.</span><span class="token constant">PI_OVER_THREE</span><span class="token punctuation">;</span>
+camera<span class="token punctuation">.</span>frustum<span class="token punctuation">.</span>near <span class="token operator">=</span> <span class="token number">1.0</span><span class="token punctuation">;</span>
+camera<span class="token punctuation">.</span>frustum<span class="token punctuation">.</span>far <span class="token operator">=</span> <span class="token number">2.0</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="属性" tabindex="-1"><a class="header-anchor" href="#属性" aria-hidden="true">#</a> 属性</h2>
 <h3 id="default-offset" tabindex="-1"><a class="header-anchor" href="#default-offset" aria-hidden="true">#</a> <a href="">DEFAULT_OFFSET</a></h3>
 <p>当相机拉近到物体包围球时，默认的heading/pitch/range值。</p>
 <h3 id="default-view-factor" tabindex="-1"><a class="header-anchor" href="#default-view-factor" aria-hidden="true">#</a> <a href="">DEFAULT_VIEW_FACTOR</a></h3>
