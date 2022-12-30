@@ -21,4 +21,4 @@ addEntityPoint() {
 }
 ```
 
-![点](D:\riceSand\three.js封装--webgis场景-文档\three.jsforgisAPIdocs\docs\example\img\point.png)
+![点](./img/point.png)

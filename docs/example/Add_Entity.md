@@ -17,4 +17,4 @@ entities.add({
 });
 ```
 
-![矩形](D:\riceSand\three.js封装--webgis场景-文档\three.jsforgisAPIdocs\docs\example\img\rectangle.png)
+![矩形](./img/rectangle.png)

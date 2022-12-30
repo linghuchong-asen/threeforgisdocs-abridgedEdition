@@ -41,4 +41,4 @@ addEntityPolyline() {
 },
 ```
 
-![多段线](D:\riceSand\three.js封装--webgis场景-文档\three.jsforgisAPIdocs\docs\example\img\polyline.gif)
+![多段线](./img/polyline.gif)

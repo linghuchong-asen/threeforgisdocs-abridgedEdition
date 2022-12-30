@@ -80,6 +80,10 @@ export const sidebar_hope = sidebar({
           text: "多边形",
           link: "/example/EntityPolygon.md",
         },
+        {
+          text: "拾取点",
+          link: "/example/pickPoint.md",
+        },
       ],
     },
   ],
